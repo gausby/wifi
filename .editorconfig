@@ -1,0 +1,11 @@
+root = true
+
+# We use Unix-style newlines and we end every file with a newline
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# We use 2 space indentation
+[*.{ex,exs}]
+indent_style = space
+indent_size = 2
