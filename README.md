@@ -17,6 +17,11 @@ Currently the project implements the following
 Pull requests or feature requests are more than welcome if you have suggestions and ideas on how to work with Wifi. Also, I (Martin Gausby) needs help making this run on Unix-like and Windows systems. Current only Mac OS X is supported.
 
 
+Installation
+------------
+The project is available on [hex.pm](https://hex.pm/) as [Wifi](http://hex.pm/packages/wifi). Add it to your mix dependencies using the decided version, ie: `{:wifi, "~> 0.0.1"}`, and be sure to add `:wifi` to the `applications` list, as we need to start the Hackney application for the `Wifi.location/0` function to work.
+
+
 License
 -------
 The MIT License (MIT)
