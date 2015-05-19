@@ -36,7 +36,10 @@ defmodule Wifi.Mixfile do
   defp package do
     %{
       licenses: ["MIT"],
-      contributors: ["Martin Gausby"],
+      contributors: [
+        "Martin Gausby",
+        "Jonas Skovsgaard Christensen"
+      ],
       links: %{ "GitHub" => "https://github.com/gausby/wifi"},
       files: ~w(lib config mix.exs LICENSE VERSION README*)
     }
