@@ -20,7 +20,11 @@ defmodule Wifi.Scanner do
     File.exists? Wifi.Scanner.Airport.utility ->
       defdelegate scan, to: Wifi.Scanner.Airport
 
-    # Linux, unix, etc, please help
+    # Linux
+    File.exists? Wifi.Scanner.Iwlist.utility ->
+      defdelegate scan, to: Wifi.Scanner.Iwlist
+    
+    #unix, etc, please help
 
     # fallback, raise an exception!
     true ->
