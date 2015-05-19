@@ -4,7 +4,7 @@ Various utility functions for working with the local Wifi network in Elixir. The
 
 This project is inspired by [wifi-location](https://github.com/wearefractal/wifi-location) by [Fractal](https://github.com/wearefractal) and [node-wifiscanner](https://github.com/mauricesvay/node-wifiscanner) by [Maurice Svay](https://github.com/mauricesvay).
 
-**Please help**: So far the project will only work on Mac OS X. If you are running Windows or Linux (or any of the BSDs) please make a scanner-wrapper that implements `Wifi.Scanner.*name*.utility/0`, `Wifi.Scanner.*name*.scan/0` and `Wifi.Scanner.*name*.parse/1`. Refer to the `Wifi.Scanner.Airport` implementation. On Windows the utility `netsh` should be helpful, and on Linux the `iwlist` should do the job. Thanks.
+**Please help**: So far the project will only work on Mac OS X and Linux. If you are running Windows (or any of the BSDs) please make a scanner-wrapper that implements `Wifi.Scanner.*name*.utility/0`, `Wifi.Scanner.*name*.scan/0` and `Wifi.Scanner.*name*.parse/1`. Refer to the `Wifi.Scanner.Airport` implementation. On Windows the utility `netsh` should be helpful. Thanks.
 
 
 Features
@@ -14,7 +14,7 @@ Currently the project implements the following
   * `Wifi.scan/0` return a list of local Wifi base stations with information such as security modes and signal strength.
   * `Wifi.location/0` will attempt to triangulate the psychical location of the computer running the script based on triangulation using the local Wifi surroundings and Googles location APIs.
 
-Pull requests or feature requests are more than welcome if you have suggestions and ideas on how to work with Wifi. Also, I (Martin Gausby) needs help making this run on Unix-like and Windows systems. Current only Mac OS X is supported.
+Pull requests or feature requests are more than welcome if you have suggestions and ideas on how to work with Wifi. Also, I (Martin Gausby) needs help making this run on Unix-like and Windows systems. Current only Mac OS X and Linux are supported.
 
 
 Installation
