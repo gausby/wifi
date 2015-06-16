@@ -14,7 +14,7 @@ defmodule Wifi.Scanner do
   # This will only run at initialization, so please restart the application if
   # you change the the underlying operating system while the program is running.
   cond do
-    # Microsoft Windows systems, please help
+    # Microsoft Windows systems
     File.exists? Wifi.Scanner.Netsh.utility ->
       defdelegate scan, to: Wifi.Scanner.Netsh
 
@@ -26,7 +26,7 @@ defmodule Wifi.Scanner do
     File.exists? Wifi.Scanner.Iwlist.utility ->
       defdelegate scan, to: Wifi.Scanner.Iwlist
 
-    #unix, etc, please help
+    # unix, etc, please help
 
     # fallback, raise an exception!
     true ->

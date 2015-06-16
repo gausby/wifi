@@ -38,7 +38,8 @@ defmodule Wifi.Mixfile do
       licenses: ["MIT"],
       contributors: [
         "Martin Gausby",
-        "Jonas Skovsgaard Christensen"
+        "Jonas Skovsgaard Christensen",
+        "Hans Pagh"
       ],
       links: %{ "GitHub" => "https://github.com/gausby/wifi"},
       files: ~w(lib config mix.exs LICENSE VERSION README*)
