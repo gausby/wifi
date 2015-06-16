@@ -15,6 +15,8 @@ defmodule Wifi.Scanner do
   # you change the the underlying operating system while the program is running.
   cond do
     # Microsoft Windows systems, please help
+    File.exists? Wifi.Scanner.Netsh.utility ->
+      defdelegate scan, to: Wifi.Scanner.Netsh
 
     # Mac OS X systems
     File.exists? Wifi.Scanner.Airport.utility ->
@@ -23,7 +25,7 @@ defmodule Wifi.Scanner do
     # Linux
     File.exists? Wifi.Scanner.Iwlist.utility ->
       defdelegate scan, to: Wifi.Scanner.Iwlist
-    
+
     #unix, etc, please help
 
     # fallback, raise an exception!
